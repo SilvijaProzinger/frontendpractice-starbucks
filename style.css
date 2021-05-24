@@ -1,0 +1,258 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 7px 16px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    border-bottom: 1px solid #d0d0d0;
+    padding-left: 0;
+}
+
+.menu-and-login {
+    width: 80%;
+    padding-top: 65px;
+    background-color: white;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    padding-left: 20px;
+}
+
+.menu li {
+    padding: 16px 32px;
+}
+
+.sign-in-button {
+    margin-right: 16px;
+}
+
+.sign-in-button:hover {
+    background-color: #f3f1e7;
+}
+
+.join-button {
+    background-color: black;
+    color: white;
+}
+
+.find-store {
+    font-weight: 700;
+    position: fixed;
+    margin-top: 50px;
+}
+
+.find-store:hover {
+    color: #008248;
+}
+
+.location-icon {
+    background: url('/images/pin.svg') no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    margin-left: 30px;
+}
+
+.user-login-items {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.menu-button {
+    border: none;
+    background: url('./images/menu.svg');
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    margin-top: 30px;
+    right: 20px;
+}
+
+.subheader {
+    background-color: #1e3932;
+    width: 100%;
+    color: white;
+    padding: 17px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-app-button {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    position: fixed;
+    right: 16px;
+}
+
+.main-section {
+    text-align: center;
+    padding: 32px 24px;
+    margin-top: 50px;
+}
+
+.page-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.join-now-button {
+    border: none;
+    background-color: #008248;
+    color: white;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.join-app-link {
+    text-decoration: underline;
+}
+
+.main-section {
+    text-align: center;
+    background-color: rgb(212, 233, 226);
+    background-image: url('images/hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+}
+
+@media only screen and (min-width: 785px){
+    .header-items {
+        justify-content: flex-start;
+        padding-bottom: 7px;
+    }
+
+    .menu {
+        display: flex;
+        border-bottom: none;
+    } 
+
+    .menu li {
+        padding: 16px 15px;
+    }
+
+    .menu-and-login {
+        display: flex;
+        width: auto;
+        padding-top: 0;
+        right: auto;
+        height: auto;
+        position: initial;
+        padding-left: 0;
+    }
+
+    .menu-link {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 40px;
+    }
+
+    .menu-link:hover, .menu-link:active {
+        box-shadow: inset 0 -6px #008248;
+    }
+
+    .user-login-items {
+        align-self: center;
+        right: 40px;
+        position: fixed;
+        padding-top: 0;
+        padding-left: 0; 
+    }
+
+    .find-store {
+        margin-right: 40px;  
+        position: initial; 
+        margin-top: 0;   
+    }
+
+    .location-icon {
+        background: url('/images/pin.svg') no-repeat left;
+    }
+
+    .rewards-title {
+        padding-left: 99px;
+    }   
+
+    .main-section {
+        text-align: left;
+        background-color: rgb(212, 233, 226);
+        background-image: url('images/hero-desktop.png');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        padding-top: 220px;
+        padding-bottom: 220px;
+    }
+
+    .page-title {
+        font-size: 2.2rem;
+        padding-left: 20px;
+    }
+
+    .page-subtitle {
+        font-size: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .join-now-button {
+        margin-left: 20px;
+    }
+}
