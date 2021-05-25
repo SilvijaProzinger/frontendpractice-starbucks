@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
     margin: 0;
+    overflow-x: hidden;
 }
 
 ul {
@@ -239,11 +240,6 @@ a {
     justify-content: center;
 }
 
-.tab-img {
-    width: 100%;
-    height: auto;
-}
-
 .tab-details {
     align-self: center;
 }
@@ -295,6 +291,11 @@ a {
 
 .tab:focus {
     outline: none;
+}
+
+.tab-star {
+    color: #cba258;
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 785px){
@@ -407,5 +408,15 @@ a {
     .tab-content {
         text-align: left;
         height: 200px;
+        width: 100%;
+    }
+
+    .tab-details {
+        width: 25vw;
+        margin-left: 2rem;
+    }
+
+    .tab-img {
+        margin-right: 2rem;
     }
 }
