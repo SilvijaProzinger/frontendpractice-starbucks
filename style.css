@@ -242,6 +242,7 @@ a {
 
 .tab-details {
     align-self: center;
+    padding: 0 1.5rem;
 }
 
 .tab-details h4 {
@@ -250,26 +251,33 @@ a {
 
 .tab-button {
     cursor: pointer;
-    width: 150px;
+    width: 70px;
     display: inline-block;
     background: transparent;
     color:black;
     text-align: center;
     border: none;
     padding: 0.5rem 0.5rem 1rem;
-    font-weight: 700;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
-.tab-button:focus, .tab-button:active {
+.tab-button:active {
     box-shadow: inset 0 -6px #008248;
 }
 
-.tab-button:focus + .tab-content {
+input:checked + .tab-button {
+    box-shadow: inset 0 -6px #008248;
+}
+
+input {
+    opacity: 0;
+}
+
+input:checked + .tab-button + .tab-content {
     display: block;
     position: absolute;
     background-color:#d4e9e2;
-    //width: 100%;
     left: 0;
     outline: none;
     padding-top: 3rem;
@@ -296,6 +304,10 @@ a {
 .tab-star {
     color: #cba258;
     font-size: 1rem;
+}
+
+.tab-img {
+    width: 70%;
 }
 
 @media only screen and (min-width: 785px){
@@ -401,10 +413,10 @@ a {
         padding-bottom: 0;
     }
 
-    .tab-button:focus + .tab-content {
+    input:checked + .tab-button + .tab-content {
         display: flex;
     }
-
+    
     .tab-content {
         text-align: left;
         height: 200px;
@@ -414,9 +426,11 @@ a {
     .tab-details {
         width: 25vw;
         margin-left: 2rem;
+        padding: 0;
     }
 
     .tab-img {
         margin-right: 2rem;
+        width: auto;
     }
 }
