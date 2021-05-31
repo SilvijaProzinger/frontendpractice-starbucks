@@ -192,7 +192,7 @@ a {
 .page-title-smaller {
     text-align: center;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .page-text {
@@ -342,6 +342,7 @@ input:checked + .tab-button + .tab-content {
 .collect-div {
     display: block;
     margin-top: 6rem;
+    padding: 0 1rem;
 }
 
 .earn-options {
@@ -350,6 +351,7 @@ input:checked + .tab-button + .tab-content {
 
 .earn-star-div {
     display: flex;
+    width: auto;
 }
 
 .earn-img {
@@ -360,6 +362,11 @@ input:checked + .tab-button + .tab-content {
 .earn-title {
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.earn-num-title {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 785px){
@@ -435,6 +442,10 @@ input:checked + .tab-button + .tab-content {
         padding-top: 0;
     }
 
+    .page-title-smaller {
+        font-size: 1.8rem;
+    }
+
     .page-subtitle {
         font-size: 1.2rem;
     }
@@ -449,10 +460,6 @@ input:checked + .tab-button + .tab-content {
         text-align: center;
         margin: 0 5vw;
         padding-left: 0;
-    }
-
-    .page-title-smaller {
-        font-size: 2rem;
     }
 
     .getting-started-num {
@@ -499,6 +506,10 @@ input:checked + .tab-button + .tab-content {
         width: 60%;
         margin: 0 auto;
     }
+
+    .collect-div {
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 786px) and (max-width: 1024px) {
@@ -508,6 +519,18 @@ input:checked + .tab-button + .tab-content {
 
     .earn-options {
         display: flex;
+    }
+
+    .collect-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .earn-star-div {
+        width: 50%;
+    }
+
+    .extras-desc {
+        width: 66%;
     }
 }
 
@@ -525,7 +548,7 @@ input:checked + .tab-button + .tab-content {
     }
 
     .earn-item {
-        width: 33%;
+        width: 38%;
     }
 
     .collect-section {
