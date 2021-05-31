@@ -334,6 +334,34 @@ input:checked + .tab-button + .tab-content {
     width: 100%;
 }
 
+.collect-section {
+    padding-top: 3rem;
+    background-color: #f3f1e7;
+}
+
+.collect-div {
+    display: block;
+    margin-top: 6rem;
+}
+
+.earn-options {
+    display: block;
+}
+
+.earn-star-div {
+    display: flex;
+}
+
+.earn-img {
+    align-self: center;
+    padding-right: 1rem;
+}
+
+.earn-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 785px){
     .header-items {
         justify-content: flex-start;
@@ -470,5 +498,37 @@ input:checked + .tab-button + .tab-content {
     .extras-desc {
         width: 60%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 786px) and (max-width: 1024px) {
+    .collect-div {
+        display: block;
+    }
+
+    .earn-options {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .collect-div {
+        display: flex;
+    }
+
+    .earn-options {
+        display: flex;
+    }
+
+    .earn-star-div {
+        padding-left: 1.5rem;
+    }
+
+    .earn-item {
+        width: 33%;
+    }
+
+    .collect-section {
+        padding: 3rem 3rem;
     }
 }
