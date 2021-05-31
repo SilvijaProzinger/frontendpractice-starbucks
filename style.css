@@ -319,6 +319,17 @@ input:checked + .tab-button + .tab-content {
     margin-top: 27rem;
 }
 
+.extras-img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 1rem;
+    align-self: center;
+}
+
+.extras-item {
+    display: flex;
+}
+
 @media only screen and (min-width: 785px){
     .header-items {
         justify-content: flex-start;
@@ -445,5 +456,14 @@ input:checked + .tab-button + .tab-content {
 
     .extras-section {
         margin-top: 0;
+    }
+
+    .extras-img {
+        padding-left: 0;
+        align-self: auto;
+    }
+
+    .extras-item {
+        display: block;
     }
 }
