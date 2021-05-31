@@ -42,6 +42,7 @@ a {
     background-color: white;
     width: 100%;
     top: 0;
+    z-index: 3;
 }
 
 .logo {
@@ -179,6 +180,7 @@ a {
 
 .getting-started-section {
     margin: 4.5rem 0;
+    padding: 0 1rem;
 }
 
 .getting-started-list {
@@ -229,6 +231,7 @@ a {
 .tabs-section {
     background-color: #f1f8f6; 
     padding-top: 2rem;
+    padding-bottom: 8rem;
 }
 
 .tabs {
@@ -282,6 +285,7 @@ input:checked + .tab-button + .tab-content {
     outline: none;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    z-index: 1;
 }
 
 .tab-content {
@@ -307,7 +311,12 @@ input:checked + .tab-button + .tab-content {
 }
 
 .tab-img {
-    width: 70%;
+    width: 90%;
+}
+
+.extras-section {
+    padding-top: 8rem;
+    margin-top: 27rem;
 }
 
 @media only screen and (min-width: 785px){
@@ -424,7 +433,7 @@ input:checked + .tab-button + .tab-content {
     }
 
     .tab-details {
-        width: 25vw;
+        width: 30vw;
         margin-left: 2rem;
         padding: 0;
     }
@@ -432,5 +441,9 @@ input:checked + .tab-button + .tab-content {
     .tab-img {
         margin-right: 2rem;
         width: auto;
+    }
+
+    .extras-section {
+        margin-top: 0;
     }
 }
