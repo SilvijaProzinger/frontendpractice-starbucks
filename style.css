@@ -192,7 +192,7 @@ a {
 .page-title-smaller {
     text-align: center;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .page-text {
@@ -355,8 +355,9 @@ input:checked + .tab-button + .tab-content {
 }
 
 .earn-img {
-    align-self: center;
+    align-self: baseline;
     padding-right: 1rem;
+    padding-top: 0.9rem;
 }
 
 .earn-title {
@@ -367,6 +368,10 @@ input:checked + .tab-button + .tab-content {
 .earn-num-title {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.earn-item {
+    padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 785px){
@@ -503,12 +508,16 @@ input:checked + .tab-button + .tab-content {
     }
 
     .extras-desc {
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
     }
 
     .collect-div {
         padding: 0;
+    }
+
+    .earn-item {
+        padding-bottom: 0;
     }
 }
 
@@ -532,6 +541,10 @@ input:checked + .tab-button + .tab-content {
     .extras-desc {
         width: 66%;
     }
+
+    .earn-item {
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -548,7 +561,8 @@ input:checked + .tab-button + .tab-content {
     }
 
     .earn-item {
-        width: 38%;
+        width: 41%;
+        padding-bottom: 0;
     }
 
     .collect-section {
