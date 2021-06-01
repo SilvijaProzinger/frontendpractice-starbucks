@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    color: rgba(0, 0, 0, .87);
 }
 
 ul {
@@ -408,6 +409,25 @@ input:checked + .tab-button + .tab-content {
     padding: 2rem 1rem;
 }
 
+.rules-section {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    text-align: left;
+}
+
+.rules-item {
+    padding-bottom: 2rem;
+}
+
+.rewards-text {
+    font-size: 0.875rem;
+}
+
+.rewards-subtitle {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .56);
+}
+
 @media only screen and (min-width: 785px){
     .header-items {
         justify-content: flex-start;
@@ -560,6 +580,19 @@ input:checked + .tab-button + .tab-content {
         width: 50%;
         margin: 0 auto;
     }
+
+    .rules-details {
+        display: flex;
+    }
+
+    .rules-item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .rules-item-second {
+        padding-left: 2rem;
+    }
 }
 
 @media only screen and (min-width: 786px) and (max-width: 1024px) {
@@ -604,5 +637,9 @@ input:checked + .tab-button + .tab-content {
 
     .collect-section {
         padding: 3rem 3rem;
+    }
+  
+    .rules-section {
+        padding: 4rem;
     }
 }
